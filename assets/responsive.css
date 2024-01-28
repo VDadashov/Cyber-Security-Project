@@ -1,0 +1,231 @@
+@media all and (min-width: 1200px) {
+	h1.error-heading {
+	    font-size: 52px;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	body {
+		overflow-x: hidden;
+	}
+	.pd-bottom-85 {
+		padding-bottom: 40px;
+	}
+	.pd-top-145 {
+	    padding-top: 115px;
+	}
+	.common-pd-bottom {
+		padding-bottom: 60px;
+	}
+	h2,
+	.ctr-area .ctr-wrap h3 {
+		font-size: 36px;
+	}
+	.footer-consultint-area .footer-widget .widget-title {
+		font-size: 20px;
+	}
+	footer.footer-area.style-3 {
+	    background-size: 100% 100%;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li:hover:before {
+	     opacity: 1;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li.current-menu-item:before {
+	     opacity: 1;
+	     top: 2px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	h2,
+	.ctr-area .ctr-wrap h3 {
+		font-size: 28px;
+	}
+	.pd-bottom-70 {
+		padding-bottom: 40px;
+	}
+	body #redlight_main_menu.show {
+		display: none;
+	}
+	body .expand_close #redlight_main_menu.show {
+		display: block;
+	}
+	.footer-area .footer-top {
+	    padding: 425px 0 70px;
+	}
+	footer.footer-area.style-3 {
+        background-color: transparent !important;
+        background-size: cover;
+        background-position: top center;
+    }
+    footer.footer-area.style-3 .footer-top {
+        padding: 425px 0 70px;
+    }
+    .footer-area .footer-bottom .footer-menu {
+	    margin-bottom: 0px;
+	}
+	.right-part-search {
+		margin-right: 35px;
+	}
+	.transaction-area {
+		padding-top: 70px;
+	}
+	.navbar-area-2 .nav-container .navbar-collapse {
+		top: 80px;
+		border-radius: 10px;
+		position: absolute;
+	}
+	.blog-details-comment {
+	    margin-right: 0;
+	}
+	.blog-details-border {
+	    margin-right: 0;
+	}
+	.page-title-area p {
+		padding: 0px;
+		font-size: 16px !important;
+	}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+	.nav-transparent .nav-white {
+		margin: 0 15px;
+	}
+	.footer-consultint-area .footer-widget {
+		margin-bottom: 50px;
+	}
+	.btn-nn {
+		font-size: 16px!important;
+		width: 130px!important;
+		padding: 0 15px!important;
+	}
+	.common-pd-bottom {
+		padding-bottom: 50px;
+	}
+	.pd-bottom-85 {
+		padding-bottom: 55px;
+	}
+	.common-pd-bottom-3 {
+		padding-bottom: 60px;
+	}
+	.common-pd-2 {
+		padding: 40px 0 38px;
+	}
+	.common-pd-bottom {
+		padding-bottom: 30px;
+	}
+	.single-blog-wrap .blog-details {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.mg-bottom-120 {
+		margin-bottom: 70px;
+	}
+	.page-title-area,
+	.page-title-area span,
+	.page-title-area .breadcrumb .active,
+	.page-title-area .breadcrumb {
+		color: var(--e-global-color-accent);
+	}
+	/*New add*/
+	article.sticky::after {
+	    top: 11px;
+	    right: -16px;
+	    font-size: 35px;
+	}
+	.custom-date-wrap {
+		width: 70px;
+		height: 70px;
+	}
+	.custom-date-wrap span {
+		font-size: 32px;
+		line-height: 24px;
+	}
+	.comments-area .comment-list li ul.children li {
+		margin-left: 0;
+	}
+	.blog-details-area .author .author-img {
+		position: inherit;
+		transform: inherit;
+	}
+	.blog-details-area .author {
+		padding-left: 0;
+		padding-top: 30px;
+		margin-right: 0;
+	}
+	.page-title-area .breadcrumb {
+		display: inline-block;
+	}
+	.right-part-search a i {
+		width: 18px;
+		height: 45px;
+		line-height: 41px;
+		border: 0;
+	}
+	.page-title-area p {
+		margin: 10px;
+		margin-top: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	h2,
+	.ctr-area .ctr-wrap h3 {
+		font-size: 22px;
+	}
+}
+
+
+/*================== small mobile :320px. ===================*/
+
+@media (max-width: 767px) {
+	.page-title-area {
+		padding: 130px 0 60px;
+	}
+	.expand_close #redlight_main_menu.show {
+		transition: 0.3s;
+	}
+	.page-title-area h3, .page-title-area .title {
+	    font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.page-title-area {
+		padding: 150px 0 60px;
+	}
+	.page-title-area h3, .page-title-area .title {
+		font-size: 30px;
+	}
+	.page-title-area p {
+		font-size: 14px;
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+	.page-title-area .breadcrumb {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 425px) {
+	.navbar-top .topbar-right li:first-child:before, .navbar-top .topbar-right li:last-child:before {
+	    display: none;
+	}
+	.comments-area .comment-list li .single-comment-wrap {
+		display: grid;
+		padding-right: 0;
+	}
+	.navbar-top .topbar-right {
+    	display: none;
+    }
+	.page-title-area.style-2 {
+		padding: 245px 0 190px;
+	}
+}
+@media (max-width: 320px) {
+    .nav-transparent .nav-container .right-part-search {
+        padding: 0 20px 0 0;
+    }
+}

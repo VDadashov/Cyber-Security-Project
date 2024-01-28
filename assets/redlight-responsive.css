@@ -1,0 +1,363 @@
+@media screen and (max-width: 1199px) {
+	.about-us-section-start .about-us-content {
+	padding: 30px 12px 30px 17px;
+	}
+	.about-us-section-start .about-us-content h4 {
+		margin-bottom: 10px;
+	  }
+	  .about-us-section-start .about-us-content .icons-rounded-box {
+		padding: 10px 14px;
+		margin-bottom: 20px;
+	  }
+	  .subscription-form .btn-form-section {
+		right: 7px;
+		top: 7px;
+		padding: 15px 33px 15px 32px;
+	  }
+	  .blogs-section {
+		padding: 26px 24px 26px 24px;
+	  }
+	
+	  .blogs-section figure img {
+		width: 100%;
+	  }
+	
+	  .blogs-section .blogs-h5 {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 37px 0px 30px;
+	  }
+	  .faq-section .elementor-toggle-item .elementor-tab-title a{
+		font-size: 18px !important;
+		line-height: 30px;
+		font-weight: 600;
+	  }
+	  .cards-section {
+		padding: 0px 0px;
+	  }
+	  .cards-section .outer-padding-left {
+		padding-right: 36px;
+		margin-left: -32px;
+	  }
+	
+	  .cards-section .outer-card2 {
+		padding-left: 0px;
+	  }
+}
+@media screen and (max-width:1100px) {
+	.clients-section .testimonial-carousel-section2 .clients-right-content {
+		margin-left: 12px;
+		padding-top: 20px;
+		margin-bottom: 49px;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li:last-child a {
+		margin-left: 30px !important;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children {
+		margin-right: 20px !important;
+	}
+}
+@media screen and (max-width:991px){
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li.current-menu-item:last-child a{
+		color:#000 !important;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li:last-child a {
+		margin-left: 0px !important;
+		color: #000 !important;
+	}
+	.navbar-area-2 .nav-transparent .nav-container .navbar-collapse .navbar-nav > li:last-child:hover a {
+		color: #000 !important;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children {
+		position: relative;
+		z-index: 0;
+		margin-right: 0px !important;
+	}
+	.subscription-form .form-section {
+		padding: 57px 20px 57px 20px;
+	  }
+	
+	  .subscription-form .input-field-form {
+		width: 90% !important;
+	  }
+	
+	  .form-button button {
+		font-size: 16px;
+	  }
+	  .subscription-form .btn-form-section {
+		right: 7px;
+		top: 5px;
+	  }
+	
+	  .subscription-form .input-form-input {
+		padding: 0px 20px 0px 28px;
+		font-size: 18px;
+		height: 70px;
+		font-size: 16px;
+		line-height: 24px;
+	  }
+	  .blogs-section {
+		padding: 15px 15px 15px 15px;
+	  }
+	  .blogs-section .blogs-h5 {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 24px 10px 12px;
+	  }
+	  .faq-section .elementor-toggle-item .elementor-tab-title a{
+		font-size: 16px !important;
+		line-height: 30px;
+		font-weight: 600;
+	  }
+	  .clients-section .clients-outer-box {
+		padding: 26px 20px 8px;
+	  }
+	
+	  .clients-section .clients-outer-box .icon-figure-quotes {
+		right: 22px;
+	  }
+	
+	  .clients-section .clients-right-content {
+		margin-left: 0px;
+		padding-top: 27px;
+		margin-bottom: 30px;
+	  }
+	
+	  .clients-section .clients-outer-box .clients-outer-box-figure {
+		margin-right: 15px;
+	  }
+	
+	  .clients-section .clients-right-content .spencer-span {
+		font-size: 20px;
+		line-height: 20px;
+		margin-bottom: 5px;
+	  }
+	
+	  .clients-section .clients-outer-box .clients-sectionp2 {
+		margin-bottom: 12px;
+		font-size: 16px !important;
+	  }
+	  .contact-us-section .input-text {
+		padding: 24px 30px;
+	  }
+	  .contact-us-section .contact-section-btn .btn {
+		font-size: 16px;
+		line-height: 16px;
+		padding: 15px 40px 15px;
+		height: 50px;
+	}
+	.cart-btn {
+		background-color: #77777778;
+		padding: 8px 10px 0px 10px;
+		border-radius: 6px;
+		margin-top: -7px;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li:last-child a {
+		padding: 0px;
+		background-color: transparent;
+		color: #000;
+		border-radius: 6px;
+		margin-left: 0px;
+	}
+	.nav-transparent .nav-container .navbar-collapse .navbar-nav > li:last-child a:hover{
+		background-color: transparent;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li.menu-item-has-children {
+		margin-right: 0px;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav .menu-item-has-children a:first-child::before{
+		color:#000 !important;
+	}
+	.navbar-area .nav-container .navbar-collapse .navbar-nav li + li {
+		margin: 0px 0px !important;
+	}
+	.navbar-area .nav-container .navbar-nav li.menu-item-has-children > .sub-menu {
+		border-radius: 6px !important;
+		background: transparent !important;
+		color: #000 !important;
+	}
+	footer.footer-area p.copyright {
+		padding: 10px 0px 10px 0px !important;
+		font-size: 14px !important;
+	}
+	.about-us-section-start .security-services-p {
+		margin-bottom: 10px;
+	}
+	p{
+		font-size: 16px !important;
+	}
+	/* cards-section */
+	.cards-section .card-heading-p {
+	padding: 25px 7px 0 0px;
+	}
+
+	.cards-section .outer-card1 {
+	margin-left: -4px;
+	}
+
+	.cards-section .cards-outer::after {
+	right: 3px;
+	}
+
+	.cards-section .outer-padding-left {
+	padding-right: 0;
+	}
+
+	.banner-btn a {
+	padding: 17px 30px 17px 29px;
+	}
+
+	.cards-section .outer-card2 {
+	padding-left: 28px;
+	}
+}
+@media screen and (max-width:860px) {
+	#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+@media screen and (max-width:767px){
+	p{
+		font-size: 14px !important;
+	}
+	.navbar-area-2 .navbar-area .nav-container .navbar-collapse .navbar-nav li {
+		padding: 0px !important;
+	}
+	.navbar-area-2 .navbar-area .navbar {
+		padding: 0px 0px;
+	}
+	.about-us-section-start .security-services-p {
+		margin-bottom: 10px;
+	}
+	.subscription-form .input-group>.form-control:not(:last-child) {
+		font-size: 16px;
+		line-height: 24px;
+	  }
+	
+	  .subscription-form .btn-form-section {
+		font-size: 14px;
+		line-height: 24px;
+	  }
+	  .subscription-form .form-section {
+		padding: 60px 34px 60px 32px;
+	  }
+	  .blogs-section {
+		padding: 20px;
+		margin-bottom: 20px;
+	  }
+	  .faq-section .elementor-toggle-item .elementor-tab-title a{
+		font-size: 16px !important;
+		line-height: 30px;
+		font-weight: 600;
+	  }
+	  .clients-section .owl-carousel .owl-dots {
+		display: none !important;
+	  }
+	  .clients-section .owl-carousel .owl-dots .owl-dot span{
+		display: none;
+	  }
+	  .contact-us-section .contact-section-btn .btn {
+		font-size: 16px;
+		line-height: 16px;
+		padding: 15px 40px 15px;
+		height: 50px;
+	}
+	.cards-section .cards-outer::after {
+		display: none;
+	  }
+	
+	  .cards-section .card-heading-p {
+		padding: 24px 104px 0px 116px;
+		margin-bottom: 10px;
+	  }
+	
+	  .outer-padding-left-last {
+		padding-right: 0;
+		margin-left: 0;
+	  }
+	
+	  .cards-section .outer-padding-left {
+		padding-right: 0;
+		margin-left: 0;
+	  }
+	
+	  .cards-section .outer-card2 {
+		padding-left: 0px;
+	  }
+	
+	  .cards-section .date-p {
+		margin-bottom: 0px;
+	  }
+	
+}
+@media screen and (max-width: 575px) {
+	  .about-us-section-start .about-us-content {
+		padding: 28px 30px 25px;
+		margin-bottom: 20px;
+		text-align: center;
+	  }
+	  .about-us-section-start .about-us-content h4 {
+		margin-bottom: 10px;
+	  }
+	   /* contact-us */
+  .subscription-form .form-section {
+    padding: 46px 13px 46px 13px;
+  }
+
+  .subscription-form .input-field-form {
+    width: 100% !important;
+  }
+
+  .subscription-form .input-group>.form-control:not(:last-child) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .subscription-form .input-form-input {
+    padding: 0px 20px 0px 20px;
+    height: 64px;
+  }
+
+  .subscription-form .btn-form-section {
+    right: 7px;
+    top: 2px;
+    padding: 12px 20px 12px 20px !important;
+  }
+  .subscription-form .btn-form-section{
+	height: 45px;
+  }
+  .subscription-form input{
+	height: 50px !important;
+  }
+  /* blogs */
+  .blogs-section .blogs-p {
+    font-size: 14.91px;
+    line-height: 24px;
+  }
+
+  .blogs-section .blogs-h5 {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 26px 30px 10px;
+  }
+  .clients-section .clients-outer-box .clients-sectionp2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .clients-section .clients-outer-box {
+    padding: 18px 17px 0px;
+  }
+  .subscription-form .form-button button {
+    font-size: 14px;
+  }
+  .cards-section .card-heading-p {
+    padding: 24px 30px 0px 30px;
+    margin-bottom: 10px;
+  }
+
+  .cards-section .outer-card2 {
+    padding-left: 0px;
+  }
+
+}
