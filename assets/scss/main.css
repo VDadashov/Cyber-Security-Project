@@ -1,3 +1,4 @@
+@import url();
 .contact__btn {
   color: rgb(0, 17, 70);
   font-size: 100%;
@@ -32,7 +33,7 @@
   margin: 0 auto;
 }
 
-.centerDiv, header nav ul, .contact {
+.centerDiv, .events__section, header nav ul, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,4 +112,17 @@ header nav .dropdown:hover .dropdown__content {
 }
 header nav .dropdown:hover i {
   transform: rotate(180deg);
+}
+
+.events__section {
+  height: 30vh;
+  gap: 30px;
+  background-color: rgb(5, 3, 41);
+}
+.events__section .events__box {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
