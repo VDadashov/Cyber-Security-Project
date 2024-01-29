@@ -1,0 +1,20 @@
+
+.contact{
+    width: 20%;
+    height: 15vh;
+    @extend .centerDiv;
+    &__btn{
+        color: white;
+        width: 50%;
+        height: 7vh;
+        font-size: 100%;
+        border-radius: 5px;
+        border: none;
+        background-color: $btn-color;
+        &:hover{
+            background-color: white;
+            color: $btn-color;
+        }
+    }
+
+}
