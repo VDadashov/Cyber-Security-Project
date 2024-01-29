@@ -1,21 +1,26 @@
-.contact {
-  width: 20%;
-  height: 15vh;
-}
 .contact__btn {
-  color: white;
-  width: 50%;
-  height: 7vh;
+  color: rgb(0, 17, 70);
   font-size: 100%;
+  padding: 10px 15px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(0, 17, 70);
+  background-color: white;
 }
 .contact__btn:hover {
-  background-color: white;
-  color: rgb(0, 17, 70);
+  background-color: rgb(0, 17, 70);
+  color: white;
 }
 
+@keyframes animation {
+  from {
+    left: 20%;
+    opacity: 0.1;
+  }
+  to {
+    left: -10%;
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -52,9 +57,16 @@ header nav {
 header nav ul li {
   list-style: none;
 }
+header nav ul li:hover {
+  cursor: pointer;
+}
 header nav ul li a {
   color: white;
   text-decoration: none;
+}
+header nav ul li i {
+  color: white;
+  font-size: 10px;
 }
 header nav .dropdown {
   position: relative;
@@ -63,7 +75,7 @@ header nav .dropdown {
 header nav .dropdown::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 150%;
   height: 45%;
   top: 100%;
 }
@@ -78,6 +90,7 @@ header nav .dropdown__content {
   background-color: white;
   width: 160px;
   z-index: 1;
+  animation: animation 0.8s forwards;
 }
 header nav .dropdown__content ul {
   display: flex;
@@ -95,4 +108,7 @@ header nav .dropdown__content ul li a:hover {
 header nav .dropdown:hover .dropdown__content {
   display: block;
   transition: all 4s;
+}
+header nav .dropdown:hover i {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=main.css.map */
