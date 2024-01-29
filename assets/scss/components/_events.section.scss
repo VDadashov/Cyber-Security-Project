@@ -1,0 +1,16 @@
+@import '../utils/variables';
+@import '../';
+.events__section{
+    height: 30vh;
+    @extend .centerDiv;
+    gap: 30px;
+    background-color: $main-color;
+    .events__box{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+    }
+
+}
