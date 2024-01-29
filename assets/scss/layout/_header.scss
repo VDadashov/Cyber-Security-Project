@@ -1,47 +1,73 @@
 @import '../utils/variables';
 @import '../components/button';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    max-width: calc(100% - 450px);
+    margin: 0 auto;
+}
+
 .centerDiv{
     display: flex;
     justify-content: space-around;
     align-items: center;
     
 }
+
 header{
-    width: 100%;
-    height: 15vh;
-    @extend .centerDiv;
+    padding: 10px 0;
     background-color: $main-color;
-    .logo{
-        height: 15vh;
-        img{
-            width: 70%;
-            margin-top: 2vh;
+    .header-content{     
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            img{
+                width: 70%;
+                margin-top: 2vh;
+            }
         }
     }
 
 nav{
-    .navbar__dropdowns{
-        width: 400px;
-        ul{  
-           @extend .centerDiv ;
-           li{
-            list-style: none;
-            a{
-               color: white;
-               text-decoration: none;
-            }
-           }
+    width: 400px;
+    ul{  
+        @extend .centerDiv ;
+        li{
+         list-style: none;
+         a{
+            color: white;
+            text-decoration: none;
+         }
         }
-    }
+     }
     .dropdown{
         position: relative;
         display: inline-block;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 45%;
+            top: 100%;
+        }
+
         &__content{
+            border-radius: 5px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: none;
+            position: absolute;
+            left: -10%;
+            top: 150%;
+            transform: translate(-10%);
+            background-color: white;
+            width: 160px;
+            z-index: 1;
             ul{
                 display: flex;
                 flex-direction: column;
@@ -51,21 +77,20 @@ nav{
                     padding: 12px 16px;
                     text-decoration: none;
                     display: block;
+
                     &:hover{
                         color: red;
                     }
                 }
               }
             }
-         
-            display: none;
-            position: absolute;
-            background-color: white;
-            width: 160px;
-            z-index: 1;
         }
         &:hover{
-            .dropdown__content{display: block;}
+            .dropdown__content{
+                display: block;
+                transition: all 4s;
+
+            }
         }
     }
 }
