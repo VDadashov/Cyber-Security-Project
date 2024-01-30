@@ -1,0 +1,38 @@
+@import '../utils/variables';
+.events__section{
+    height: 50vh;
+    background-color: $main-color;
+    padding: 10vh 60px 10vh 60px;
+    ul{
+        @extend .centerDiv;
+        gap: 30px;
+    }
+    .events__box{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        border-right: 1px dashed;
+        li{
+            list-style: none;
+        }
+        &:hover{
+            cursor: pointer;
+            color:rgb(84,106,123);
+            .events__box__heading{
+                background-color: rgb(84,106,123);
+                color: white;
+            }
+        }
+        &__heading{
+            width: 130px;
+            height: 5vh;
+            @extend .centerDiv;
+            background-color: white;
+            color: $main-color;
+       
+        }
+    }
+
+}
