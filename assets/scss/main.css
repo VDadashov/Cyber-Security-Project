@@ -28,7 +28,7 @@
 }
 
 .container {
-  max-width: calc(100% - 450px);
+  max-width: 1150px;
   margin: 0 auto;
 }
 
@@ -113,36 +113,48 @@ header nav .dropdown:hover i {
   transform: rotate(180deg);
 }
 
+@font-face {
+  font-family: "Jost-SemiBold600";
+  src: url(../../../assets/fonts/Jost-Medium.ttf);
+}
 .events__section {
   height: 50vh;
   background-color: rgb(5, 3, 41);
   padding: 10vh 60px 10vh 60px;
+  font-size: 14px;
+  font-family: "Jost-SemiBold600";
 }
 .events__section ul {
   gap: 30px;
+  padding-inline: 35px;
 }
 .events__section .events__box {
+  padding-right: 12px;
   height: 25vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: white;
-  border-right: 1px dashed;
-}
-.events__section .events__box li {
-  list-style: none;
+  border-right: 1px dashed white;
 }
 .events__section .events__box:hover {
   cursor: pointer;
   color: rgb(84, 106, 123);
 }
 .events__section .events__box:hover .events__box__heading {
-  background-color: rgb(84, 106, 123);
+  background-color: rgb(49, 69, 84);
   color: white;
 }
+.events__section .events__box:last-child {
+  border-right: none;
+}
 .events__section .events__box__heading {
+  font-size: 16px;
   width: 130px;
   height: 5vh;
   background-color: white;
   color: rgb(5, 3, 41);
+}
+.events__section .events__box li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
