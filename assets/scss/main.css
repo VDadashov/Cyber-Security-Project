@@ -32,7 +32,7 @@
   margin: 0 auto;
 }
 
-.centerDiv, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
+.centerDiv, .advanced__cyber__security__text__area, .why__choose__us .offer__cards .offer__card article .icon__rounded__area, .why__choose__us .offer__cards .offer__card, .why__choose__us .offer__cards, .why__choose__us, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -157,4 +157,99 @@ header nav .dropdown:hover i {
 }
 .events__section .events__box li {
   list-style: none;
+}
+
+.why__choose__us {
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(5, 3, 41);
+  color: white;
+}
+.why__choose__us h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.why__choose__us .offer__cards {
+  flex: wrap;
+  max-width: calc(100% - 150px);
+  gap: 30px;
+  padding-top: 60px;
+}
+.why__choose__us .offer__cards .offer__card {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 60vh;
+  position: relative;
+}
+.why__choose__us .offer__cards .offer__card:hover {
+  cursor: pointer;
+}
+.why__choose__us .offer__cards .offer__card:hover .icon__rounded__area i {
+  color: rgb(5, 3, 41);
+}
+.why__choose__us .offer__cards .offer__card:hover .icon__rounded__area {
+  background-color: white;
+}
+.why__choose__us .offer__cards .offer__card article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px 30px 0 30px;
+  gap: 10px;
+}
+.why__choose__us .offer__cards .offer__card article h1 {
+  white-space: wrap;
+  height: 92px;
+  text-overflow: ellipsis;
+  padding-top: 20px;
+}
+.why__choose__us .offer__cards .offer__card article p {
+  padding-top: 20px;
+}
+.why__choose__us .offer__cards .offer__card article a {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+}
+.why__choose__us .offer__cards .offer__card article a:hover {
+  text-decoration: underline;
+}
+.why__choose__us .offer__cards .offer__card article .icon__rounded__area {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: gray;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.why__choose__us .offer__cards .offer__card article .icon__rounded__area i {
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.advanced__cyber__security {
+  display: flex;
+  background-color: rgb(5, 3, 41);
+  color: white;
+  padding-top: 50px;
+}
+.advanced__cyber__security__image {
+  width: 50%;
+}
+.advanced__cyber__security__text__area {
+  width: 50%;
+}
+.advanced__cyber__security__text__area article {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 50px;
+}
+.advanced__cyber__security__text__area article h1 {
+  font-size: 50px;
 }/*# sourceMappingURL=main.css.map */
