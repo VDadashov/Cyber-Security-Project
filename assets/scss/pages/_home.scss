@@ -1,247 +1,251 @@
 @import "../layout/header";
-@import "../utils/variables";
-@import "../utils/mixins";
+@import '../utils/variables';
 
 @font-face {
-  font-family: "Jost-SemiBold600";
-  src: url(../../../assets/fonts/Jost-Medium.ttf);
+    font-family: "Jost-SemiBold600";
+    src: url(../../../assets/fonts/Jost-Medium.ttf);
 }
 
-body {
-  @include linear-gradient;
-}
-
-.events-section {
-  height: 50vh;
-  padding: 10vh 60px 10vh 60px;
-  font-size: 14px;
-  font-family: "Jost-SemiBold600";
-  ul {
-    @extend .centerDiv;
-    gap: 30px;
-    padding-inline: 35px;
-  }
-  .events-box {
-    padding-right: 12px;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: $text-color;
-    border-right: 1px dashed white;
-    &:hover {
-      cursor: pointer;
-      color: rgb(84, 106, 123);
-      &__heading {
-        background-color: rgb(49, 69, 84);
+.events-section{
+    height: 50vh;
+    background-color: $main-color;
+    padding: 10vh 60px 10vh 60px;
+    font-size: 14px;
+    font-family: "Jost-SemiBold600";
+    ul{
+        @extend .centerDiv;
+        gap: 30px;
+        padding-inline: 35px;
+    }
+    .events-box{
+        padding-right: 12px;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         color: $text-color;
-      }
+        border-right: 1px dashed white;
+        &:hover{
+            cursor: pointer;
+            color:rgb(84,106,123);
+            &__heading{
+                background-color: rgb(49, 69, 84);
+                color: $text-color;
+            }
+        }
+        &:last-child{
+            border-right: none;
+        }
+        &__heading{
+            font-size: 16px;
+            width: 130px;
+            height: 5vh;
+            @extend .centerDiv;
+            background-color: white;
+            color: $main-color;
+        }
+        li{
+            list-style: none;
+        }
     }
-    &:last-child {
-      border-right: none;
-    }
-    &__heading {
-      font-size: 16px;
-      width: 130px;
-      height: 5vh;
-      @extend .centerDiv;
-      background-color: white;
-      color: $main-color;
-    }
-    li {
-      list-style: none;
-    }
-  }
+
 }
 
-.why-choose-us {
-  @extend .centerDiv;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  color: $text-color;
-  h1 {
-    font-size: 40px;
-    padding-bottom: 30px;
-  }
-  .offer-cards {
+.why-choose-us{
     @extend .centerDiv;
-    flex: wrap;
-    max-width: calc(100% - 150px);
-    gap: 30px;
-    padding-top: 60px;
-    .offer-card {
-      border: 1px solid white;
-      border-radius: 10px;
-      height: 60vh;
-      @extend .centerDiv;
-      position: relative;
-      &:hover {
-        cursor: pointer;
-
-        .icon-rounded-area {
-          i {
-            color: $main-color;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $main-color;
+    color: $text-color;
+    h1{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+    .offer-cards{
+        @extend .centerDiv;
+        flex: wrap;
+        max-width: calc(100% - 150px);
+        gap: 30px;
+        padding-top: 60px;
+        .offer-card{
+          border: 1px solid white;
+          border-radius: 10px;
+          height: 60vh;
+          @extend .centerDiv;
+          position: relative;
+          &:hover{
+            cursor: pointer;
+           
+            .icon-rounded-area{
+               i{
+                color: $main-color;
+               }
+            }
+            .icon-rounded-area{
+                background-color: white;
+    
+            }
+           
           }
+          article{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding:40px 30px 0 30px;
+            gap: 10px;
+            h1{
+                white-space: wrap;
+                height: 92px;
+                text-overflow: ellipsis;
+                padding-top: 20px;
+            }
+            p{
+                padding-top: 20px;
+            }
+            a{
+                text-decoration: none;
+                color: $text-color;
+                margin-top: 20px;
+                &:hover{
+                    text-decoration: underline;
+                }
+              
+            }
+            .icon-rounded-area{
+                width: 60px;
+                height: 60px;
+                @extend .centerDiv;
+                border-radius: 5px;
+                background-color: gray;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                i{
+                    font-size: 40px;
+                    opacity: 0.5;
+                }
+            }
+          }
+         
         }
-        .icon-rounded-area {
-          background-color: white;
-        }
-      }
-      article {
+    }
+}
+
+.advanced-cyber-security{
+    display: flex;
+    background-color: $main-color;
+    color: white;
+    padding-top: 50px;
+    &__image{
+        width: 50%;
+        padding:10vh 5%;
+    }
+    &__text-area{
+        width: 50%;
+        @extend .centerDiv;
+        article{
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        padding: 40px 30px 0 30px;
-        gap: 10px;
-        h1 {
-          white-space: wrap;
-          height: 92px;
-          text-overflow: ellipsis;
-          padding-top: 20px;
+        gap: 50px;
+        h1{
+            font-size: 50px;
         }
-        p {
-          padding-top: 20px;
         }
-        a {
-          text-decoration: none;
-          color: $text-color;
-          margin-top: 20px;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        .icon-rounded-area {
-          width: 60px;
-          height: 60px;
-          @extend .centerDiv;
-          border-radius: 5px;
-          background-color: gray;
-          position: absolute;
-          top: 30px;
-          left: 30px;
-          i {
-            font-size: 40px;
-            opacity: 0.5;
-          }
-        }
-      }
     }
-  }
 }
-
-.advanced-cyber-security {
-  display: flex;
-  color: white;
-  padding-top: 50px;
-  &__image {
-    width: 50%;
-    padding: 10vh 5%;
-  }
-  &__text-area {
-    width: 50%;
-    @extend .centerDiv;
-    article {
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 50px;
-      h1 {
-        font-size: 50px;
-      }
-    }
-  }
-}
-.average-section {
-  width: 100%;
-  height: 50vh;
-  @extend .centerDiv;
-  background-color: $main-color;
-  &__cards {
+.average-section{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 50px 0 50px;
-  }
-  &__card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0 20px 0 20px;
-    width: 20%;
-    height: 40vh;
-    border: 1px solid white;
-    color: white;
-    gap: 20px;
-
-    i {
-      font-size: 50px;
-      color: gray;
+    height: 50vh;
+    @extend .centerDiv;
+    background-color: $main-color;
+    &__cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 50px 0 50px;
     }
-    h1 {
-      font-size: 50px;
+    &__card{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+        width: 20%;
+        height: 40vh;
+        border: 1px solid white;
+        color: white;
+        gap: 20px;
+       
+        i{
+            font-size: 50px;
+            color: gray;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 20px;
+            color: gray;
+        }
     }
-    p {
-      font-size: 20px;
-      color: gray;
-    }
-  }
 }
-.general-questions {
-  @extend .centerDiv;
-  background-color: $main-color;
-  padding-top: 10vh;
-  &__side {
-    width: 50%;
-    padding-right: 5%;
+.general-questions{
+    @extend .centerDiv;
+    background-color: $main-color;
+    padding-top: 10vh;
+    &__side{
+        width: 50%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        color: white;
+      
+    }
+}
+.accordions{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    color: white;
-  }
-}
-.accordions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
 
-  .accordion {
-    width: 90%;
-  }
+    .accordion{
+        width: 90%;
+     }
 
-  .question {
-    border: 1px solid rgba(211, 211, 211, 0.482);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    height: 12vh;
-    padding: 5px 15px;
-    cursor: pointer;
-  }
-  .answer {
-    padding-left: 10px;
-    padding: 10px 15px;
-    display: none;
-  }
+     .question {
+        border: 1px solid rgba(211, 211, 211, 0.482);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        height: 12vh;
+        padding:5px 15px;
+        cursor: pointer;
+    }
+    .answer {
+        padding-left: 10px;
+        padding: 10px 15px;
+        display: none;
+    }
 }
 .accordion.active {
-  .answer {
-    transition: all 0.3s;
-    display: block;
-  }
-  .icon {
-    transform: rotate(90deg);
-    transition: all 0.3s;
-  }
+	.answer {
+        transition: all 0.3s;
+		display: block;
+	} 
+	.icon {
+		transform: rotate(90deg);
+        transition: all 0.3s;
+	}
 }
