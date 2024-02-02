@@ -21,7 +21,18 @@
     opacity: 1;
   }
 }
-.centerDiv, .general-questions, .average-section, .advanced-cyber-security__text-area, .why-choose-us .offer-cards .offer-card article .icon-rounded-area, .why-choose-us .offer-cards .offer-card, .why-choose-us .offer-cards, .why-choose-us, .events-section .events-box__heading, .events-section ul, header nav ul, .contact {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.centerDiv, .advanced__cyber__security__text__area, .why__choose__us .offer__cards .offer__card article .icon__rounded__area, .why__choose__us .offer__cards .offer__card, .why__choose__us .offer__cards, .why__choose__us, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
