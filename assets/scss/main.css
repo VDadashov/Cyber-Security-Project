@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
 .contact__btn {
   color: rgb(0, 17, 70);
   font-size: 100%;
@@ -21,18 +32,7 @@
     opacity: 1;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-}
-
-.centerDiv, .advanced__cyber__security__text__area, .why__choose__us .offer__cards .offer__card article .icon__rounded__area, .why__choose__us .offer__cards .offer__card, .why__choose__us .offer__cards, .why__choose__us, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
+.centerDiv, .advanced-cyber-security__text__area, .why__choose__us .offer__cards .offer__card article .icon__rounded__area, .why__choose__us .offer__cards .offer__card, .why__choose__us .offer__cards, .why__choose__us, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -40,7 +40,6 @@
 
 header {
   padding: 10px 0;
-  background-color: rgb(5, 3, 41);
 }
 header .header-content {
   display: flex;
@@ -54,23 +53,36 @@ header .header-content .logo img {
 header nav {
   width: 400px;
 }
-header nav ul li {
+header nav .navigation {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+header nav .navigation li {
   list-style: none;
 }
-header nav ul li:hover {
+header nav .navigation li:hover {
   cursor: pointer;
 }
-header nav ul li a {
+header nav .navigation li a {
   color: white;
   text-decoration: none;
 }
-header nav ul li i {
+header nav .navigation li i {
   color: white;
   font-size: 10px;
 }
 header nav .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+header nav .dropdown a {
+  font-size: 18px;
+}
+header nav .dropdown i {
+  font-size: 12px;
 }
 header nav .dropdown::before {
   position: absolute;
@@ -111,15 +123,20 @@ header nav .dropdown:hover .dropdown__content {
 }
 header nav .dropdown:hover i {
   transform: rotate(180deg);
+  transition: all 0.5;
 }
 
 @font-face {
   font-family: "Jost-SemiBold600";
   src: url(../../../assets/fonts/Jost-Medium.ttf);
 }
+body {
+  background: rgb(11, 14, 38);
+  background: linear-gradient(180deg, rgb(11, 14, 38) 0%, rgb(10, 7, 75) 46%, rgb(30, 32, 77) 100%);
+}
+
 .events__section {
   height: 50vh;
-  background-color: rgb(5, 3, 41);
   padding: 10vh 60px 10vh 60px;
   font-size: 14px;
   font-family: "Jost-SemiBold600";
@@ -163,7 +180,6 @@ header nav .dropdown:hover i {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: rgb(5, 3, 41);
   color: white;
 }
 .why__choose__us h1 {
@@ -230,19 +246,21 @@ header nav .dropdown:hover i {
   opacity: 0.5;
 }
 
-.advanced__cyber__security {
-  display: flex;
-  background-color: rgb(5, 3, 41);
+.advanced-cyber-security {
   color: white;
   padding-top: 50px;
 }
-.advanced__cyber__security__image {
+.advanced-cyber-security__content {
+  display: flex;
+  justify-content: space-between;
+}
+.advanced-cyber-security__image {
   width: 50%;
 }
-.advanced__cyber__security__text__area {
+.advanced-cyber-security__text__area {
   width: 50%;
 }
-.advanced__cyber__security__text__area article {
+.advanced-cyber-security__text__area article {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -250,6 +268,6 @@ header nav .dropdown:hover i {
   flex-direction: column;
   gap: 50px;
 }
-.advanced__cyber__security__text__area article h1 {
+.advanced-cyber-security__text__area article h1 {
   font-size: 50px;
 }/*# sourceMappingURL=main.css.map */
