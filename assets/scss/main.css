@@ -40,7 +40,6 @@
 
 header {
   padding: 10px 0;
-  background-color: rgb(5, 3, 41);
 }
 header .header-content {
   display: flex;
@@ -117,20 +116,13 @@ header nav .dropdown:hover i {
   font-family: "Jost-SemiBold600";
   src: url(../../../assets/fonts/Jost-Medium.ttf);
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
+body {
+  background: rgb(11, 14, 38);
+  background: linear-gradient(180deg, rgb(11, 14, 38) 0%, rgb(10, 7, 75) 46%, rgb(30, 32, 77) 100%);
 }
 
 .events-section {
   height: 50vh;
-  background-color: rgb(5, 3, 41);
   padding: 10vh 60px 10vh 60px;
   font-size: 14px;
   font-family: "Jost-SemiBold600";
@@ -174,7 +166,6 @@ header nav .dropdown:hover i {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background-color: rgb(5, 3, 41);
   color: white;
 }
 .why-choose-us h1 {
@@ -243,7 +234,6 @@ header nav .dropdown:hover i {
 
 .advanced-cyber-security {
   display: flex;
-  background-color: rgb(5, 3, 41);
   color: white;
   padding-top: 50px;
 }
