@@ -32,7 +32,7 @@
   margin: 0 auto;
 }
 
-.centerDiv, .advanced__cyber__security__text__area, .why__choose__us .offer__cards .offer__card article .icon__rounded__area, .why__choose__us .offer__cards .offer__card, .why__choose__us .offer__cards, .why__choose__us, .events__section .events__box__heading, .events__section ul, header nav ul, .contact {
+.centerDiv, .general-questions, .average-section, .advanced-cyber-security__text-area, .why-choose-us .offer-cards .offer-card article .icon-rounded-area, .why-choose-us .offer-cards .offer-card, .why-choose-us .offer-cards, .why-choose-us, .events-section .events-box__heading, .events-section ul, header nav ul, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -117,18 +117,18 @@ header nav .dropdown:hover i {
   font-family: "Jost-SemiBold600";
   src: url(../../../assets/fonts/Jost-Medium.ttf);
 }
-.events__section {
+.events-section {
   height: 50vh;
   background-color: rgb(5, 3, 41);
   padding: 10vh 60px 10vh 60px;
   font-size: 14px;
   font-family: "Jost-SemiBold600";
 }
-.events__section ul {
+.events-section ul {
   gap: 30px;
   padding-inline: 35px;
 }
-.events__section .events__box {
+.events-section .events-box {
   padding-right: 12px;
   height: 25vh;
   display: flex;
@@ -137,61 +137,61 @@ header nav .dropdown:hover i {
   color: white;
   border-right: 1px dashed white;
 }
-.events__section .events__box:hover {
+.events-section .events-box:hover {
   cursor: pointer;
   color: rgb(84, 106, 123);
 }
-.events__section .events__box:hover .events__box__heading {
+.events-section .events-box:hover__heading {
   background-color: rgb(49, 69, 84);
   color: white;
 }
-.events__section .events__box:last-child {
+.events-section .events-box:last-child {
   border-right: none;
 }
-.events__section .events__box__heading {
+.events-section .events-box__heading {
   font-size: 16px;
   width: 130px;
   height: 5vh;
   background-color: white;
   color: rgb(5, 3, 41);
 }
-.events__section .events__box li {
+.events-section .events-box li {
   list-style: none;
 }
 
-.why__choose__us {
+.why-choose-us {
   flex-direction: column;
   width: 100%;
   height: 100vh;
   background-color: rgb(5, 3, 41);
   color: white;
 }
-.why__choose__us h1 {
+.why-choose-us h1 {
   font-size: 40px;
   padding-bottom: 30px;
 }
-.why__choose__us .offer__cards {
+.why-choose-us .offer-cards {
   flex: wrap;
   max-width: calc(100% - 150px);
   gap: 30px;
   padding-top: 60px;
 }
-.why__choose__us .offer__cards .offer__card {
+.why-choose-us .offer-cards .offer-card {
   border: 1px solid white;
   border-radius: 10px;
   height: 60vh;
   position: relative;
 }
-.why__choose__us .offer__cards .offer__card:hover {
+.why-choose-us .offer-cards .offer-card:hover {
   cursor: pointer;
 }
-.why__choose__us .offer__cards .offer__card:hover .icon__rounded__area i {
+.why-choose-us .offer-cards .offer-card:hover .icon-rounded-area i {
   color: rgb(5, 3, 41);
 }
-.why__choose__us .offer__cards .offer__card:hover .icon__rounded__area {
+.why-choose-us .offer-cards .offer-card:hover .icon-rounded-area {
   background-color: white;
 }
-.why__choose__us .offer__cards .offer__card article {
+.why-choose-us .offer-cards .offer-card article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -199,24 +199,24 @@ header nav .dropdown:hover i {
   padding: 40px 30px 0 30px;
   gap: 10px;
 }
-.why__choose__us .offer__cards .offer__card article h1 {
+.why-choose-us .offer-cards .offer-card article h1 {
   white-space: wrap;
   height: 92px;
   text-overflow: ellipsis;
   padding-top: 20px;
 }
-.why__choose__us .offer__cards .offer__card article p {
+.why-choose-us .offer-cards .offer-card article p {
   padding-top: 20px;
 }
-.why__choose__us .offer__cards .offer__card article a {
+.why-choose-us .offer-cards .offer-card article a {
   text-decoration: none;
   color: white;
   margin-top: 20px;
 }
-.why__choose__us .offer__cards .offer__card article a:hover {
+.why-choose-us .offer-cards .offer-card article a:hover {
   text-decoration: underline;
 }
-.why__choose__us .offer__cards .offer__card article .icon__rounded__area {
+.why-choose-us .offer-cards .offer-card article .icon-rounded-area {
   width: 60px;
   height: 60px;
   border-radius: 5px;
@@ -225,24 +225,25 @@ header nav .dropdown:hover i {
   top: 30px;
   left: 30px;
 }
-.why__choose__us .offer__cards .offer__card article .icon__rounded__area i {
+.why-choose-us .offer-cards .offer-card article .icon-rounded-area i {
   font-size: 40px;
   opacity: 0.5;
 }
 
-.advanced__cyber__security {
+.advanced-cyber-security {
   display: flex;
   background-color: rgb(5, 3, 41);
   color: white;
   padding-top: 50px;
 }
-.advanced__cyber__security__image {
+.advanced-cyber-security__image {
+  width: 50%;
+  padding: 10vh 5%;
+}
+.advanced-cyber-security__text-area {
   width: 50%;
 }
-.advanced__cyber__security__text__area {
-  width: 50%;
-}
-.advanced__cyber__security__text__area article {
+.advanced-cyber-security__text-area article {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -250,6 +251,93 @@ header nav .dropdown:hover i {
   flex-direction: column;
   gap: 50px;
 }
-.advanced__cyber__security__text__area article h1 {
+.advanced-cyber-security__text-area article h1 {
   font-size: 50px;
+}
+
+.average-section {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(5, 3, 41);
+}
+.average-section__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+.average-section__card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
+  width: 20%;
+  height: 40vh;
+  border: 1px solid white;
+  color: white;
+  gap: 20px;
+}
+.average-section__card i {
+  font-size: 50px;
+  color: gray;
+}
+.average-section__card h1 {
+  font-size: 50px;
+}
+.average-section__card p {
+  font-size: 20px;
+  color: gray;
+}
+
+.general-questions {
+  background-color: rgb(5, 3, 41);
+  padding-top: 10vh;
+}
+.general-questions__side {
+  width: 50%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+}
+
+.accordions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.accordions .accordion {
+  width: 90%;
+}
+.accordions .question {
+  border: 1px solid rgba(211, 211, 211, 0.482);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 12vh;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.accordions .answer {
+  padding-left: 10px;
+  padding: 10px 15px;
+  display: none;
+}
+
+.accordion.active .answer {
+  transition: all 0.3s;
+  display: block;
+}
+.accordion.active .icon {
+  transform: rotate(90deg);
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */
