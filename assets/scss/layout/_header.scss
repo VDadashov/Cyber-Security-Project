@@ -11,6 +11,11 @@
   }
 }
 
+@font-face {
+  font-family: "Jost-Regular400";
+  src: url(../../../assets/fonts/Jost-Regular.ttf);
+}
+
 .centerDiv {
   display: flex;
   justify-content: space-around;
@@ -19,24 +24,29 @@
 
 header {
   padding: 10px 0;
+  font-family: "Jost-Regular400";
+  margin-bottom: 140px;
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .logo {
       img {
-        width: 70%;
+        width: 65%;
         margin-top: 2vh;
       }
     }
   }
 
   nav {
-    width: 400px;
-    ul {
-      @extend .centerDiv;
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 45px;
       li {
         list-style: none;
+        font-size: 18px;
+
         &:hover {
           cursor: pointer;
         }
@@ -52,7 +62,12 @@ header {
     }
     .dropdown {
       position: relative;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      i {
+        margin-top: 4px;
+      }
       &::before {
         position: absolute;
         content: "";
@@ -76,12 +91,15 @@ header {
         ul {
           display: flex;
           flex-direction: column;
+          align-items: center;
+          padding: 6px 0;
           li {
             a {
               color: black;
-              padding: 12px 16px;
+              padding: 8px 16px;
               text-decoration: none;
               display: block;
+              font-size: 16px;
 
               &:hover {
                 color: red;

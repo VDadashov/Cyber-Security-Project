@@ -1,1 +1,16 @@
-@import './pages/home';
+@import "./pages/home";
+@import "./pages/about";
+@import "./layout/footer";
+@import "./layout/header";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost-SemiBold600";
+}
+
+.container {
+  max-width: 1195px;
+  margin: 0 auto;
+}

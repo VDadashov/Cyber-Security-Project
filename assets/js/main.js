@@ -1,19 +1,35 @@
-const accordions = document.querySelectorAll(".accordion");
+//#region why-choose-us--animation-active
+function wCUAnimationActive() {
+  let items = document.querySelectorAll(".why-choose-us__item");
 
-accordions.forEach(accordion => {
+  items.forEach((item) => {
+    item.addEventListener("mousemove", () => {
+      item.classList.add("move-up");
+      item.classList.remove("move-down");
+    });
+    item.addEventListener("mouseleave", () => {
+      item.classList.add("move-down");
+      item.classList.remove("move-up");
+    });
+  });
+}
+wCUAnimationActive();
+//#endregion
 
-    accordion.addEventListener("click",()=>{
+//#region operation-center--active
+function oSActive() {
+  let items = document.querySelectorAll(".operation-center__item");
 
-        if(!accordion.classList.contains("active")){
-            accordions.forEach(e => {
-                e.classList.remove("active");
-            })
-    
-            accordion.classList.add("active");
-        }else{
-            accordion.classList.remove("active");
-        }
-    })
-});
-
-
+  items.forEach((item) => {
+    item.addEventListener("mousemove", () => {
+      item.classList.add("move-up");
+      item.classList.remove("move-down");
+    });
+    item.addEventListener("mouseleave", () => {
+      item.classList.add("move-down");
+      item.classList.remove("move-up");
+    });
+  });
+}
+oSActive();
+//#endregion

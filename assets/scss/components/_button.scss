@@ -1,18 +1,17 @@
+.contact {
+  @extend .centerDiv;
 
-.contact{
-    @extend .centerDiv;
-    
-    &__btn{
-        color: $btn-color;
-        font-size: 100%;
-        padding: 10px 15px ;
-        border-radius: 5px;
-        border: none;
-        background-color: white;
-        &:hover{
-            background-color: $btn-color;
-            color: white;
-        }
+  &__btn {
+    color: $btn-color;
+    font-size: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    &:hover {
+      background-color: $btn-color;
+      color: white;
+      cursor: pointer;
     }
-
+  }
 }
